@@ -17,8 +17,8 @@ CHANGE MASTER TO
     MASTER_PORT=3306,
     MASTER_USER='replicator',
     MASTER_PASSWORD='12345',
-    MASTER_LOG_FILE='binlog.000001',
-    MASTER_LOG_POS=333;
+    MASTER_LOG_FILE='binlog.000001', --binlog obtido no comando SHOW MASTER STATUS
+    MASTER_LOG_POS=333;  --position obtida no comando SHOW MASTER STATUS
 
 START SLAVE;
 
